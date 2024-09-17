@@ -1,0 +1,17 @@
+armx is a basic ARMv7 emulator used to test several ideas related to
+multi architecture binary translation. The emulator is capable of running ARM
+code on a Linux machine, as well as generating RISC-V translation traces.
+
+The project supports the following instructions:
+adc     branch  ldmdb   mlas    muls    rev16   smlabt  smlsd   smmulr  stm     svc     teq     uxtab16
+add     clz     ldmib   mls     mvn     revsh   smlad   smlsdx  smuad   stmda   swi     tst     uxtah
+adds    cmn     ldr     mov     mvns    rsb     smladx  smlsld  smuadx  stmdb   sxtab   udiv    uxtb
+adr     cmp     ldrb    movs    orr     rsbs    smlal   smlsldx smull   stmib   sxtab16 umaal   uxtb16
+all     eor     ldrd    movt    orrs    rsc     smlald  smmla   smulls  str     sxtah   umlal   uxth
+and     eors    ldrh    movw    pc      rscs    smlaldx smmlar  smusd   strd    sxtb    umlals
+ands    fib     ldrsb   mrs     pkh     sbc     smlals  smmls   smusdx  strh    sxtb16  umull
+bic     ldm     ldrsh   msr     rbit    sdiv    smlatb  smmlsr  ssat    sub     sxth    usat
+bics    ldmda   mla     mul     rev     smlabb  smlatt  smmul   stack   subs    sys     uxtab
+
+make setup
+make test

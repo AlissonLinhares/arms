@@ -1,0 +1,6 @@
+bin/
+bench/freestanding/bin/
+*.log
+*.out
+*.raw
+tags
